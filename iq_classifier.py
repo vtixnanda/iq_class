@@ -73,7 +73,7 @@ if __name__ == '__main__':
         indices.remove(i)
 
     chunk = 1024
-    labels = 16
+    labels = len(indices)
 
     classifier = IQClassifier(chunk, labels)
     IQData = IQDataset(dataset, folder, indices)
